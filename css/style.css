@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+body {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    color: #ffffff;
+    font-family:"Helvetica Neue";
+  }
+h1{
+    font-size:70px;
+    text-align: center;
+    margin-top: 20%;
+    color: black;
+    font-family:"montserrat","Helvetica Neue";
+    font-weight: 400;
+}
+span{
+    color:#3DBE29;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+}
+p{
+    text-align: center;
+    margin-top: -20px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+}
