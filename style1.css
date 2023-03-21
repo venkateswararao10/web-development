@@ -1,0 +1,74 @@
+*{
+    
+   
+  
+    margin: 0;
+    padding: 0;
+  
+   
+}
+.navbar{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    height: 20vh;
+    width: auto;
+
+}
+.anc{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,900&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+   
+    font-size: xx-large;
+    padding: 30px 0px;
+}  
+.anc a{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.li a{
+color: black;
+text-decoration: none;
+}
+.navcontent{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+a{
+    color: black;
+}
+section{
+    background-image: url("navimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:80vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.pa{
+   align-self: center;
+   color: red;
+}
+footer{
+    height:20vh;
+    width:100vw;
+     font-family: 'Montserrat', sans-serif;
+     display: flex;
+     justify-content: center;
+     background: url("footerimg.jpg") no-repeat center ;
+     background-size: cover;
+     opacity: 0.8;
+}
+.foo{
+    align-self: center;
+    font-size: larger;
+  
+}
