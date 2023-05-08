@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // arrow function
+   <script>
+    let add = (a,b) => a+b;
+    console.log(add(4,5));
+    let show = a => a;
+    console.log(show(7));
+    let greet = () => console.log('hi');
+    greet();
+    setTimeout(
+        () => {console.log('bye');},3000
+    )
+    let obj={
+        gre:'bye',
+        name:['as','kl','dj'],
+        fun(){
+            this.name.forEach((stu) =>{console.log(this.gre+stu);}); // we use arrow function to access this.gre is obj.gre but using function we can access inside function this.gre is inside gre in function
+        }
+    }
+    console.log(obj.fun())
+    </script>
+</body>
+</html>

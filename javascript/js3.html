@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=['hi','bye',1,222];
+        let i;
+        /*for (i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }*/
+       /* arr.forEach( function show(ele) {
+            console.log(ele);
+        });*/
+        /*for (i of arr){
+            console.log(i);
+        }*/
+        for(index in arr){
+            console.log(index);
+            console.log(arr[index]);
+        }
+        let obj={name:'siva','rank pos':1};
+        for(index in obj){
+            console.log(index);
+            console.log(obj[index]);
+        }
+        let j=0;
+        while(j<4){
+            console.log(j);
+            j++;
+        }
+    </script>
+</body>
+</html>

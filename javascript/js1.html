@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container">
+    <div id="content"></div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dignissimos quasi temporibus quia fugiat. Modi, tenetur tempora. Perspiciatis dicta distinctio optio voluptas velit maiores, tempore amet sit ab unde exercitationem.
+</div>
+<script>
+    var a=34;
+    var b="hi";
+    var c= 45.8;
+    console.log(a);
+    var d=a+c;
+    console.log('the ans d/a is'+(d/a));
+    console.log(` the 'value' of "a" is ${a}`);
+    var length=b.length;
+    console.log(b+length);
+    var x=new String('dj');
+    console.log(x);
+    document.getElementById('content').innerHTML='<p> head </p>';
+    let z = 10;
+// Here z is 10
+
+{
+let z = 2;
+// Here z is 2
+}
+
+// Here z is 10
+const PI = 3.141592653589793;
+
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+ console.log(greeting);
+ let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+console.log(day);
+ let var1=true;
+ let var2=null;
+ let var3=undefined;
+
+ let obj={name:'siva','rank pos':1};
+ console.log(obj);
+ let arr=[1,'hi',true,23.4];
+ console.log(arr);
+ console.log(arr[1]);
+ let arr1=new Array(9,1,7,2.3);
+ console.log(arr1.length);
+ arr1.sort();
+ arr1.push('hi');
+ console.log(arr1);
+let arr2= new Array(23); // create an array with size 23 and elements are empty i. is undefined
+arr2.push('hi');
+console.log(arr2);
+console.log(arr2[2]);
+ console.log(obj.name);
+ console.log(obj['rank pos']);
+
+
+       </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+    padding:10px 14px;
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div id="con">
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reprehenderit ab earum neque, iste, deleniti tenetur voluptates voluptas amet sed facere impedit nulla at sunt dolores accusantium debitis possimus voluptatum, quaerat modi provident doloremque!</p>
+    </div>
+    <button id="btn" onclick="fun()">show/hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log('mouseover');
+        });
+        para.addEventListener('mouseout',function run(){
+            console.log('mouseout'); });
+        function fun(){
+            let para = document.getElementById('para'); 
+        if(para.style.display != 'none'){
+        para.style.display = 'none';
+        }
+        else{
+        para.style.display = 'block';
+        }
+        }
+
+    </script>
+</body>
+</html>

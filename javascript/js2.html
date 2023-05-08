@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a,b='bye',c='hi'){
+            let d=b+c;
+            return d;
+        }
+       // console.log(add(1));or
+       let x=add(1)
+       console.log(add(1));
+
+       // alert --its dont return anything
+       alert('this is alert message');
+       //confirm
+       let delpost=confirm('do u want to delete post')
+       if(delpost){
+        console.log('u delete this post');
+       }
+       else{
+        console.log('u dont delete this post')
+       }
+       //prompt
+       //prompt('whats u r name?');
+       let name=prompt('whats u r name?','guest');
+       console.log(name);
+
+    </script>
+</body>
+</html>
