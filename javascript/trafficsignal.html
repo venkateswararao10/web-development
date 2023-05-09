@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 173px;
+            width: 69px;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #one{
+            --col:white;
+            height: 30px;
+            width: 30px;
+            border: 2px solid rgb(18, 18, 18);
+            border-radius: 50%;
+            box-shadow: inset 60px -16px var(--col);
+            margin :1em;
+        }
+        #two{
+            --col:white;
+            height: 30px;
+            width: 30px;
+            border: 2px solid rgb(18, 18, 18);
+            border-radius: 50%;
+            box-shadow: inset 60px -16px var(--col);
+            
+        }
+        #three{
+            --col:white;
+            height: 30px;
+            width: 30px;
+            border: 2px solid rgb(18, 18, 18);
+            border-radius: 50%;
+            box-shadow: inset 60px -16px var(--col);
+            margin :1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+    <script>
+        let red=document.querySelector('#one');
+        let yellow=document.querySelector('#two');
+        let green=document.querySelector('#three');
+        function redcol(){
+           red.style.setProperty('--col','red');
+           yellow.style.setProperty('--col','white');
+           green.style.setProperty('--col','white');
+        }
+        function greencol(){
+            red.style.setProperty('--col','white');
+            yellow.style.setProperty('--col','white');
+            green.style.setProperty('--col','green');
+         }
+         function yellowcol(){
+            red.style.setProperty('--col','white');
+            yellow.style.setProperty('--col','yellow');
+            green.style.setProperty('--col','white');
+         }
+        setInterval(redcol,1000);
+        setInterval(yellowcol,5000);
+        setInterval(greencol,8000);
+        /*color(yellow,'yellow');
+        color(green,'green');*/
+    </script>
+</body>
+</html>

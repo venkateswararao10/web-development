@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1 {
+text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="con">
+        <h1 id="head">enter the no to check perfectno</h1>
+        <input type="text" id="no">
+        <h1 id="op"></h1>
+    </div>
+    <button id="btn" onclick="perfectno()">click here</button>
+    <script>
+        function perfectno(){
+            let no,sum;       
+            no=Number(document.getElementById("no").value);
+            sum=0;
+            for (let i=1;i<no;i++){
+                if (no%i==0){
+                    sum+=i;
+                }
+            }
+        if (sum==no){document.getElementById('op').innerHTML=`${no} is perfectno`;}
+    else{document.getElementById('op').innerHTML=`${no} is not perfectno`;}}
+    </script>
+</body>
+</html>
